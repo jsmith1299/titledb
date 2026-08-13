@@ -7,7 +7,7 @@ echo ======================================== >> update.log
 echo [%date% %time%] Starting daily update >> update.log
 
 REM Run Python script
-python update.py >> update.log 2>&1
+"C:\Users\Nick\AppData\Local\Microsoft\WindowsApps\python.exe" update.py >> update.log 2>&1
 
 if errorlevel 1 (
     echo [%date% %time%] ERROR: update.py failed >> update.log
